@@ -1,0 +1,14 @@
+language: php
+php:
+  - '7.2'
+  - '7.3'
+  - '7.4'
+
+before_script:
+  - sudo apt-get -y install libmpdec-dev
+  - pecl install decimal
+  - composer install
+
+script:
+  - composer run lint
+  - composer run test
