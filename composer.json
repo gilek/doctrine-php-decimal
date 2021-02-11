@@ -25,6 +25,7 @@
         "doctrine/orm": "^2.8"
     },
     "require-dev": {
+        "ext-pdo_sqlite": "*",
         "symfony/var-dumper": "^5.2",
         "phpstan/phpstan": "^0.12.72",
         "phpunit/phpunit": "^9.5",

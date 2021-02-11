@@ -14,7 +14,7 @@ use TypeError;
 
 class PhpDecimalType extends Type
 {
-    private const NAME = 'php_decimal';
+    public const NAME = 'php_decimal';
 
     /**
      * {@inheritDoc}
@@ -63,7 +63,7 @@ class PhpDecimalType extends Type
     {
         if ($value === null || $value instanceof Decimal) {
             return $value;
-        }
+        };
 
         if (!is_string($value) && !is_integer($value)) {
             throw ConversionException::conversionFailedInvalidType(
