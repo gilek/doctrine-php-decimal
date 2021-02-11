@@ -4,6 +4,9 @@ php:
   - '7.3'
   - '7.4'
 
+services:
+  - mysql
+
 before_script:
   - sudo apt-get -y install libmpdec-dev
   - pecl install decimal
